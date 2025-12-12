@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VWKI8ABUZYQ=",
+  "dgSpecHash": "UoYknW5DJ5k=",
   "success": true,
-  "projectFilePath": "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.DAL.Implementacion\\SportsbookPatterns.DAL.Implementacion.csproj",
+  "projectFilePath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.DAL.Implementacion\\SportsbookPatterns.DAL.Implementacion.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nico_\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\nico_\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.DAL.Implementacion\\SportsbookPatterns.DAL.Implementacion.csproj": {}
+    "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.DAL.Implementacion\\SportsbookPatterns.DAL.Implementacion.csproj": {}
   },
   "projects": {
-    "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj": {
+    "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj",
+        "projectUniqueName": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj",
         "projectName": "SportsbookPatterns.BE",
-        "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj",
+        "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj",
         "packagesPath": "C:\\Users\\nico_\\.nuget\\packages\\",
-        "outputPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.BE\\obj\\",
+        "outputPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.BE\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.DAL.Abstraccion\\SportsbookPatterns.DAL.Abstraccion.csproj": {
+    "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.DAL.Abstraccion\\SportsbookPatterns.DAL.Abstraccion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.DAL.Abstraccion\\SportsbookPatterns.DAL.Abstraccion.csproj",
+        "projectUniqueName": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.DAL.Abstraccion\\SportsbookPatterns.DAL.Abstraccion.csproj",
         "projectName": "SportsbookPatterns.DAL.Abstraccion",
-        "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.DAL.Abstraccion\\SportsbookPatterns.DAL.Abstraccion.csproj",
+        "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.DAL.Abstraccion\\SportsbookPatterns.DAL.Abstraccion.csproj",
         "packagesPath": "C:\\Users\\nico_\\.nuget\\packages\\",
-        "outputPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.DAL.Abstraccion\\obj\\",
+        "outputPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.DAL.Abstraccion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,8 +97,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj": {
-                "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj"
+              "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj": {
+                "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj"
               }
             }
           }
@@ -138,14 +138,14 @@
         }
       }
     },
-    "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.DAL.Implementacion\\SportsbookPatterns.DAL.Implementacion.csproj": {
+    "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.DAL.Implementacion\\SportsbookPatterns.DAL.Implementacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.DAL.Implementacion\\SportsbookPatterns.DAL.Implementacion.csproj",
+        "projectUniqueName": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.DAL.Implementacion\\SportsbookPatterns.DAL.Implementacion.csproj",
         "projectName": "SportsbookPatterns.DAL.Implementacion",
-        "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.DAL.Implementacion\\SportsbookPatterns.DAL.Implementacion.csproj",
+        "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.DAL.Implementacion\\SportsbookPatterns.DAL.Implementacion.csproj",
         "packagesPath": "C:\\Users\\nico_\\.nuget\\packages\\",
-        "outputPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.DAL.Implementacion\\obj\\",
+        "outputPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.DAL.Implementacion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -166,11 +166,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj": {
-                "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj"
+              "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj": {
+                "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj"
               },
-              "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.DAL.Abstraccion\\SportsbookPatterns.DAL.Abstraccion.csproj": {
-                "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.DAL.Abstraccion\\SportsbookPatterns.DAL.Abstraccion.csproj"
+              "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.DAL.Abstraccion\\SportsbookPatterns.DAL.Abstraccion.csproj": {
+                "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.DAL.Abstraccion\\SportsbookPatterns.DAL.Abstraccion.csproj"
               }
             }
           }

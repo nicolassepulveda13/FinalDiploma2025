@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj": {}
+    "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj": {}
   },
   "projects": {
-    "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj": {
+    "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj",
+        "projectUniqueName": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj",
         "projectName": "SportsbookPatterns.BE",
-        "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj",
+        "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj",
         "packagesPath": "C:\\Users\\nico_\\.nuget\\packages\\",
-        "outputPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.BE\\obj\\",
+        "outputPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_VISITOR\\SportsbookPatterns.BE\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

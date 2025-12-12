@@ -1,0 +1,16 @@
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STATE\SportsbookPatterns.DAL.Abstraccion\bin\Debug\net8.0\SportsbookPatterns.DAL.Abstraccion.deps.json
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STATE\SportsbookPatterns.DAL.Abstraccion\bin\Debug\net8.0\SportsbookPatterns.DAL.Abstraccion.dll
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STATE\SportsbookPatterns.DAL.Abstraccion\bin\Debug\net8.0\SportsbookPatterns.DAL.Abstraccion.pdb
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STATE\SportsbookPatterns.DAL.Abstraccion\bin\Debug\net8.0\SportsbookPatterns.BE.dll
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STATE\SportsbookPatterns.DAL.Abstraccion\bin\Debug\net8.0\SportsbookPatterns.BE.pdb
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STATE\SportsbookPatterns.DAL.Abstraccion\obj\Debug\net8.0\SportsbookPatterns.DAL.Abstraccion.csproj.AssemblyReference.cache
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STATE\SportsbookPatterns.DAL.Abstraccion\obj\Debug\net8.0\SportsbookPatterns.DAL.Abstraccion.GeneratedMSBuildEditorConfig.editorconfig
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STATE\SportsbookPatterns.DAL.Abstraccion\obj\Debug\net8.0\SportsbookPatterns.DAL.Abstraccion.AssemblyInfoInputs.cache
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STATE\SportsbookPatterns.DAL.Abstraccion\obj\Debug\net8.0\SportsbookPatterns.DAL.Abstraccion.AssemblyInfo.cs
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STATE\SportsbookPatterns.DAL.Abstraccion\obj\Debug\net8.0\SportsbookPatterns.DAL.Abstraccion.csproj.CoreCompileInputs.cache
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STATE\SportsbookPatterns.DAL.Abstraccion\obj\Debug\net8.0\SportsbookPatterns.DAL.Abstraccion.sourcelink.json
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STATE\SportsbookPatterns.DAL.Abstraccion\obj\Debug\net8.0\Sportsbo.4CED3A3D.Up2Date
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STATE\SportsbookPatterns.DAL.Abstraccion\obj\Debug\net8.0\SportsbookPatterns.DAL.Abstraccion.dll
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STATE\SportsbookPatterns.DAL.Abstraccion\obj\Debug\net8.0\refint\SportsbookPatterns.DAL.Abstraccion.dll
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STATE\SportsbookPatterns.DAL.Abstraccion\obj\Debug\net8.0\SportsbookPatterns.DAL.Abstraccion.pdb
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STATE\SportsbookPatterns.DAL.Abstraccion\obj\Debug\net8.0\ref\SportsbookPatterns.DAL.Abstraccion.dll
