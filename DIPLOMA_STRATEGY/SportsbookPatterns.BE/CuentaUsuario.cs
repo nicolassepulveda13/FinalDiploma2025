@@ -7,6 +7,8 @@ namespace SportsbookPatterns.BE
         public decimal Saldo { get; set; }
         public int EstadoCuentaId { get; set; }
         public DateTime FechaCreacion { get; set; }
+
+
         public DateTime? FechaUltimaModificacion { get; set; }
     }
 }
