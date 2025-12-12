@@ -2,7 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SportsbookPatterns.BE\SportsbookPatterns.BE.csproj" />
-    <ProjectReference Include="..\SportsbookPatterns.DAL.Abstraccion\SportsbookPatterns.DAL.Abstraccion.csproj" />
+    <ProjectReference Include="..\SportsbookPatterns.DAL\SportsbookPatterns.DAL.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

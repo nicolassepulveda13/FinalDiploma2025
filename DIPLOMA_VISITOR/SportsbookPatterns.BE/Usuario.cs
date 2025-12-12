@@ -9,6 +9,8 @@ namespace SportsbookPatterns.BE
         public string? Telefono { get; set; }
         public DateTime FechaRegistro { get; set; }
         public bool Activo { get; set; }
+        
+        public string NombreCompleto => $"{Nombre} {Apellido}";
     }
 }
 

@@ -1,5 +1,5 @@
 using SportsbookPatterns.BE;
-using SportsbookPatterns.DAL.Abstraccion;
+using SportsbookPatterns.DAL;
 
 namespace SportsbookPatterns.BLL.Services
 {

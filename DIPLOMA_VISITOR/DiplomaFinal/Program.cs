@@ -1,7 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using SportsbookPatterns.BLL.Services;
-using SportsbookPatterns.DAL.Abstraccion;
-using SportsbookPatterns.DAL.Implementacion;
+using SportsbookPatterns.DAL;
 using DiplomaFinal.Forms;
 
 namespace DiplomaFinal
@@ -22,6 +21,8 @@ namespace DiplomaFinal
             services.AddSingleton<ITransaccionApuestaRepository>(sp => new TransaccionApuestaRepository(sp.GetRequiredService<Acceso>()));
             services.AddSingleton<ITransaccionRetiroRepository>(sp => new TransaccionRetiroRepository(sp.GetRequiredService<Acceso>()));
             services.AddSingleton<ITransaccionDepositoRepository>(sp => new TransaccionDepositoRepository(sp.GetRequiredService<Acceso>()));
+            services.AddSingleton<ITipoTransaccionRepository>(sp => new TipoTransaccionRepository(sp.GetRequiredService<Acceso>()));
+            services.AddSingleton<ICuentaUsuarioRepository>(sp => new CuentaUsuarioRepository(sp.GetRequiredService<Acceso>()));
 
             services.AddTransient<TransaccionService>();
             services.AddTransient<ReporteService>();

@@ -3,7 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\SportsbookPatterns.BE\SportsbookPatterns.BE.csproj" />
     <ProjectReference Include="..\SportsbookPatterns.BLL\SportsbookPatterns.BLL.csproj" />
-    <ProjectReference Include="..\SportsbookPatterns.DAL.Implementacion\SportsbookPatterns.DAL.Implementacion.csproj" />
+    <ProjectReference Include="..\SportsbookPatterns.DAL\SportsbookPatterns.DAL.csproj" />
   </ItemGroup>
 
   <ItemGroup>

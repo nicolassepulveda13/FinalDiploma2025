@@ -1,0 +1,16 @@
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.DAL\bin\Debug\net8.0\SportsbookPatterns.DAL.deps.json
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.DAL\bin\Debug\net8.0\SportsbookPatterns.DAL.dll
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.DAL\bin\Debug\net8.0\SportsbookPatterns.DAL.pdb
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.DAL\bin\Debug\net8.0\SportsbookPatterns.BE.dll
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.DAL\bin\Debug\net8.0\SportsbookPatterns.BE.pdb
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.DAL\obj\Debug\net8.0\SportsbookPatterns.DAL.csproj.AssemblyReference.cache
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.DAL\obj\Debug\net8.0\SportsbookPatterns.DAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.DAL\obj\Debug\net8.0\SportsbookPatterns.DAL.AssemblyInfoInputs.cache
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.DAL\obj\Debug\net8.0\SportsbookPatterns.DAL.AssemblyInfo.cs
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.DAL\obj\Debug\net8.0\SportsbookPatterns.DAL.csproj.CoreCompileInputs.cache
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.DAL\obj\Debug\net8.0\SportsbookPatterns.DAL.sourcelink.json
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.DAL\obj\Debug\net8.0\Sportsbo.FA85F6CA.Up2Date
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.DAL\obj\Debug\net8.0\SportsbookPatterns.DAL.dll
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.DAL\obj\Debug\net8.0\refint\SportsbookPatterns.DAL.dll
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.DAL\obj\Debug\net8.0\SportsbookPatterns.DAL.pdb
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.DAL\obj\Debug\net8.0\ref\SportsbookPatterns.DAL.dll

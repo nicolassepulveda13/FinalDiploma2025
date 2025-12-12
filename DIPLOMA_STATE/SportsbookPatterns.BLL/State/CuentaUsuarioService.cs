@@ -31,41 +31,17 @@ namespace SportsbookPatterns.BLL.State
             _tipoRepo = tipoRepo;
         }
 
-        public void CambiarEstado(CuentaUsuario cuenta, string codigoEstado)
+        public CuentaContext CrearContext(CuentaUsuario cuenta)
         {
-            var estado = _estadoRepo.GetByCodigo(codigoEstado);
-            if (estado == null)
-                throw new Exception($"Estado '{codigoEstado}' no encontrado.");
-
-            _cuentaRepo.UpdateEstado(cuenta.CuentaId, estado.EstadoCuentaId);
-            cuenta.EstadoCuentaId = estado.EstadoCuentaId;
-        }
-
-        public IEstadoCuenta ObtenerEstado(CuentaUsuario cuenta)
-        {
-            var estado = _estadoRepo.GetById(cuenta.EstadoCuentaId);
-            if (estado == null)
-                throw new Exception("Estado de cuenta no encontrado.");
-
-            return CrearEstado(estado.CodigoEstado);
-        }
-
-        public void Apostar(CuentaUsuario cuenta, decimal monto)
-        {
-            var estado = ObtenerEstado(cuenta);
-            estado.Apostar(cuenta, monto, _cuentaRepo, _transaccionRepo, _apuestaRepo, _tipoRepo);
-        }
-
-        public void Retirar(CuentaUsuario cuenta, decimal monto)
-        {
-            var estado = ObtenerEstado(cuenta);
-            estado.Retirar(cuenta, monto, _cuentaRepo, _transaccionRepo, _retiroRepo, _tipoRepo);
-        }
-
-        public void Depositar(CuentaUsuario cuenta, decimal monto)
-        {
-            var estado = ObtenerEstado(cuenta);
-            estado.Depositar(cuenta, monto, _cuentaRepo, _transaccionRepo, _depositoRepo, _tipoRepo);
+            return new CuentaContext(
+                cuenta,
+                _cuentaRepo,
+                _estadoRepo,
+                _transaccionRepo,
+                _apuestaRepo,
+                _retiroRepo,
+                _depositoRepo,
+                _tipoRepo);
         }
 
         public List<EstadoCuenta> GetAllEstados()
@@ -81,18 +57,6 @@ namespace SportsbookPatterns.BLL.State
         public List<Transaccion> GetTransaccionesByCuenta(int cuentaId)
         {
             return _transaccionRepo.GetByCuentaId(cuentaId);
-        }
-
-        private IEstadoCuenta CrearEstado(string codigoEstado)
-        {
-            return codigoEstado switch
-            {
-                "Creada" => new EstadoCreada(),
-                "ActivaSinFondos" => new EstadoActivaSinFondos(),
-                "ActivaConFondos" => new EstadoActivaConFondos(),
-                "Bloqueada" => new EstadoBloqueada(),
-                _ => throw new Exception($"Estado '{codigoEstado}' no reconocido.")
-            };
         }
     }
 }

@@ -2,9 +2,7 @@ E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.BLL\bin\Debug\net8.0
 E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.BLL\bin\Debug\net8.0\SportsbookPatterns.BLL.dll
 E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.BLL\bin\Debug\net8.0\SportsbookPatterns.BLL.pdb
 E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.BLL\bin\Debug\net8.0\SportsbookPatterns.BE.dll
-E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.BLL\bin\Debug\net8.0\SportsbookPatterns.DAL.Abstraccion.dll
 E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.BLL\bin\Debug\net8.0\SportsbookPatterns.BE.pdb
-E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.BLL\bin\Debug\net8.0\SportsbookPatterns.DAL.Abstraccion.pdb
 E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.BLL\obj\Debug\net8.0\SportsbookPatterns.BLL.csproj.AssemblyReference.cache
 E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.BLL\obj\Debug\net8.0\SportsbookPatterns.BLL.GeneratedMSBuildEditorConfig.editorconfig
 E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.BLL\obj\Debug\net8.0\SportsbookPatterns.BLL.AssemblyInfoInputs.cache
@@ -16,3 +14,5 @@ E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.BLL\obj\Debug\net8.0
 E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.BLL\obj\Debug\net8.0\refint\SportsbookPatterns.BLL.dll
 E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.BLL\obj\Debug\net8.0\SportsbookPatterns.BLL.pdb
 E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.BLL\obj\Debug\net8.0\ref\SportsbookPatterns.BLL.dll
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.BLL\bin\Debug\net8.0\SportsbookPatterns.DAL.dll
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_STRATEGY\SportsbookPatterns.BLL\bin\Debug\net8.0\SportsbookPatterns.DAL.pdb

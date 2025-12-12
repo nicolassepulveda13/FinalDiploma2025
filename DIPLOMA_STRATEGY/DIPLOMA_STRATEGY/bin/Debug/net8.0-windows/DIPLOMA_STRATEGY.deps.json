@@ -11,7 +11,7 @@
           "Microsoft.Extensions.DependencyInjection": "10.0.1",
           "SportsbookPatterns.BE": "1.0.0",
           "SportsbookPatterns.BLL": "1.0.0",
-          "SportsbookPatterns.DAL.Implementacion": "1.0.0",
+          "SportsbookPatterns.DAL": "1.0.0",
           "System.Configuration.ConfigurationManager": "10.0.1"
         },
         "runtime": {
@@ -437,7 +437,7 @@
       "SportsbookPatterns.BLL/1.0.0": {
         "dependencies": {
           "SportsbookPatterns.BE": "1.0.0",
-          "SportsbookPatterns.DAL.Abstraccion": "1.0.0"
+          "SportsbookPatterns.DAL": "1.0.0"
         },
         "runtime": {
           "SportsbookPatterns.BLL.dll": {
@@ -446,26 +446,14 @@
           }
         }
       },
-      "SportsbookPatterns.DAL.Abstraccion/1.0.0": {
-        "dependencies": {
-          "SportsbookPatterns.BE": "1.0.0"
-        },
-        "runtime": {
-          "SportsbookPatterns.DAL.Abstraccion.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "SportsbookPatterns.DAL.Implementacion/1.0.0": {
+      "SportsbookPatterns.DAL/1.0.0": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "6.1.3",
           "SportsbookPatterns.BE": "1.0.0",
-          "SportsbookPatterns.DAL.Abstraccion": "1.0.0",
           "System.Configuration.ConfigurationManager": "10.0.1"
         },
         "runtime": {
-          "SportsbookPatterns.DAL.Implementacion.dll": {
+          "SportsbookPatterns.DAL.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -720,12 +708,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "SportsbookPatterns.DAL.Abstraccion/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "SportsbookPatterns.DAL.Implementacion/1.0.0": {
+    "SportsbookPatterns.DAL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

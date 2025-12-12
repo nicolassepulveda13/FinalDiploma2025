@@ -136,12 +136,8 @@ E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_VISITOR\DiplomaFinal\bin\Debug\net8.0-windows\ru
 E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_VISITOR\DiplomaFinal\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_VISITOR\DiplomaFinal\bin\Debug\net8.0-windows\SportsbookPatterns.BE.dll
 E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_VISITOR\DiplomaFinal\bin\Debug\net8.0-windows\SportsbookPatterns.BLL.dll
-E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_VISITOR\DiplomaFinal\bin\Debug\net8.0-windows\SportsbookPatterns.DAL.Abstraccion.dll
-E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_VISITOR\DiplomaFinal\bin\Debug\net8.0-windows\SportsbookPatterns.DAL.Implementacion.dll
 E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_VISITOR\DiplomaFinal\bin\Debug\net8.0-windows\SportsbookPatterns.BE.pdb
 E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_VISITOR\DiplomaFinal\bin\Debug\net8.0-windows\SportsbookPatterns.BLL.pdb
-E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_VISITOR\DiplomaFinal\bin\Debug\net8.0-windows\SportsbookPatterns.DAL.Implementacion.pdb
-E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_VISITOR\DiplomaFinal\bin\Debug\net8.0-windows\SportsbookPatterns.DAL.Abstraccion.pdb
 E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_VISITOR\DiplomaFinal\obj\Debug\net8.0-windows\DiplomaFinal.csproj.AssemblyReference.cache
 E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_VISITOR\DiplomaFinal\obj\Debug\net8.0-windows\DiplomaFinal.Forms.FrmVisitor.resources
 E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_VISITOR\DiplomaFinal\obj\Debug\net8.0-windows\DiplomaFinal.csproj.GenerateResource.cache
@@ -156,3 +152,5 @@ E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_VISITOR\DiplomaFinal\obj\Debug\net8.0-windows\re
 E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_VISITOR\DiplomaFinal\obj\Debug\net8.0-windows\DiplomaFinal.pdb
 E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_VISITOR\DiplomaFinal\obj\Debug\net8.0-windows\DiplomaFinal.genruntimeconfig.cache
 E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_VISITOR\DiplomaFinal\obj\Debug\net8.0-windows\ref\DiplomaFinal.dll
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_VISITOR\DiplomaFinal\bin\Debug\net8.0-windows\SportsbookPatterns.DAL.dll
+E:\UAI\3RO\DIPLOMA 2025\DIPLOMA_VISITOR\DiplomaFinal\bin\Debug\net8.0-windows\SportsbookPatterns.DAL.pdb

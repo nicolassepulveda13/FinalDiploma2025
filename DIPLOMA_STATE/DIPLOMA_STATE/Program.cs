@@ -30,7 +30,6 @@ namespace DIPLOMA_STATE
 
             services.AddTransient<UsuarioService>();
             services.AddTransient<CuentaUsuarioService>();
-
             services.AddTransient<FrmState>();
 
             ServiceProvider = services.BuildServiceProvider();

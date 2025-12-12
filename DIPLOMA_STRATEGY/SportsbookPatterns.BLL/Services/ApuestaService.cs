@@ -1,7 +1,7 @@
 using SportsbookPatterns.BE;
 using SportsbookPatterns.BLL.DTOs;
 using SportsbookPatterns.BLL.Strategy;
-using SportsbookPatterns.DAL.Abstraccion;
+using SportsbookPatterns.DAL;
 
 namespace SportsbookPatterns.BLL.Services
 {

@@ -1,8 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using SportsbookPatterns.BLL.Services;
 using SportsbookPatterns.BLL.Strategy;
-using SportsbookPatterns.DAL.Abstraccion;
-using SportsbookPatterns.DAL.Implementacion;
+using SportsbookPatterns.DAL;
 using DIPLOMA_STRATEGY.Forms;
 
 namespace DIPLOMA_STRATEGY

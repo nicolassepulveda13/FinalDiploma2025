@@ -38,8 +38,8 @@
               "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.BLL\\SportsbookPatterns.BLL.csproj": {
                 "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.BLL\\SportsbookPatterns.BLL.csproj"
               },
-              "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.DAL.Implementacion\\SportsbookPatterns.DAL.Implementacion.csproj": {
-                "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.DAL.Implementacion\\SportsbookPatterns.DAL.Implementacion.csproj"
+              "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.DAL\\SportsbookPatterns.DAL.csproj": {
+                "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.DAL\\SportsbookPatterns.DAL.csproj"
               }
             }
           }
@@ -188,8 +188,8 @@
               "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj": {
                 "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj"
               },
-              "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.DAL.Abstraccion\\SportsbookPatterns.DAL.Abstraccion.csproj": {
-                "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.DAL.Abstraccion\\SportsbookPatterns.DAL.Abstraccion.csproj"
+              "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.DAL\\SportsbookPatterns.DAL.csproj": {
+                "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.DAL\\SportsbookPatterns.DAL.csproj"
               }
             }
           }
@@ -229,14 +229,14 @@
         }
       }
     },
-    "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.DAL.Abstraccion\\SportsbookPatterns.DAL.Abstraccion.csproj": {
+    "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.DAL\\SportsbookPatterns.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.DAL.Abstraccion\\SportsbookPatterns.DAL.Abstraccion.csproj",
-        "projectName": "SportsbookPatterns.DAL.Abstraccion",
-        "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.DAL.Abstraccion\\SportsbookPatterns.DAL.Abstraccion.csproj",
+        "projectUniqueName": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.DAL\\SportsbookPatterns.DAL.csproj",
+        "projectName": "SportsbookPatterns.DAL",
+        "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.DAL\\SportsbookPatterns.DAL.csproj",
         "packagesPath": "C:\\Users\\nico_\\.nuget\\packages\\",
-        "outputPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.DAL.Abstraccion\\obj\\",
+        "outputPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -259,78 +259,6 @@
             "projectReferences": {
               "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj": {
                 "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.DAL.Implementacion\\SportsbookPatterns.DAL.Implementacion.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.DAL.Implementacion\\SportsbookPatterns.DAL.Implementacion.csproj",
-        "projectName": "SportsbookPatterns.DAL.Implementacion",
-        "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.DAL.Implementacion\\SportsbookPatterns.DAL.Implementacion.csproj",
-        "packagesPath": "C:\\Users\\nico_\\.nuget\\packages\\",
-        "outputPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.DAL.Implementacion\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\nico_\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj": {
-                "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj"
-              },
-              "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.DAL.Abstraccion\\SportsbookPatterns.DAL.Abstraccion.csproj": {
-                "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.DAL.Abstraccion\\SportsbookPatterns.DAL.Abstraccion.csproj"
               }
             }
           }

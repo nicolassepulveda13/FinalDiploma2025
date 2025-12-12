@@ -5,11 +5,24 @@ namespace DiplomaFinal.Forms
     public partial class FrmVisitor : Form
     {
         private readonly ReporteService _reporteService;
+        private readonly TransaccionService _transaccionService;
 
-        public FrmVisitor(ReporteService reporteService)
+        public FrmVisitor(ReporteService reporteService, TransaccionService transaccionService)
         {
             InitializeComponent();
             _reporteService = reporteService;
+            _transaccionService = transaccionService;
+            CargarTiposTransaccion();
+        }
+
+        private void CargarTiposTransaccion()
+        {
+            cmbTipoTransaccion.Items.Clear();
+            cmbTipoTransaccion.Items.Add("Apuesta");
+            cmbTipoTransaccion.Items.Add("Retiro");
+            cmbTipoTransaccion.Items.Add("Depósito");
+            if (cmbTipoTransaccion.Items.Count > 0)
+                cmbTipoTransaccion.SelectedIndex = 0;
         }
 
         private void btnReporteImpuestos_Click(object sender, EventArgs e)
@@ -57,6 +70,47 @@ namespace DiplomaFinal.Forms
                     new { Tipo = "Comisiones", Resultado = resultadoComisiones.ToString() } 
                 };
                 dgvResultados.DataSource = datos;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnGuardarTransaccion_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (cmbTipoTransaccion.SelectedItem == null)
+                {
+                    MessageBox.Show("Seleccione un tipo de transacción.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (!decimal.TryParse(txtMonto.Text, out decimal monto) || monto <= 0)
+                {
+                    MessageBox.Show("Ingrese un monto válido mayor a cero.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                string tipo = cmbTipoTransaccion.SelectedItem.ToString() ?? "";
+                int transaccionId = 0;
+
+                switch (tipo)
+                {
+                    case "Apuesta":
+                        transaccionId = _transaccionService.CrearApuesta(monto);
+                        break;
+                    case "Retiro":
+                        transaccionId = _transaccionService.CrearRetiro(monto);
+                        break;
+                    case "Depósito":
+                        transaccionId = _transaccionService.CrearDeposito(monto);
+                        break;
+                }
+
+                MessageBox.Show($"Transacción {tipo} creada exitosamente. ID: {transaccionId}", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtMonto.Clear();
             }
             catch (Exception ex)
             {
