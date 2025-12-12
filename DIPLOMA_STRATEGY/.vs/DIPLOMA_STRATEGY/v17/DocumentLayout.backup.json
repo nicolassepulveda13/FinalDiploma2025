@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3AAC5563-8980-4140-B2E2-1452A0CB4DD3}|DIPLOMA_STRATEGY\\DIPLOMA_STRATEGY.csproj|e:\\uai\\3ro\\diploma 2025\\diploma_strategy\\diploma_strategy\\forms\\frmstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AAC5563-8980-4140-B2E2-1452A0CB4DD3}|DIPLOMA_STRATEGY\\DIPLOMA_STRATEGY.csproj|solutionrelative:diploma_strategy\\forms\\frmstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AAC5563-8980-4140-B2E2-1452A0CB4DD3}|DIPLOMA_STRATEGY\\DIPLOMA_STRATEGY.csproj|e:\\uai\\3ro\\diploma 2025\\diploma_strategy\\diploma_strategy\\forms\\frmstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3AAC5563-8980-4140-B2E2-1452A0CB4DD3}|DIPLOMA_STRATEGY\\DIPLOMA_STRATEGY.csproj|solutionrelative:diploma_strategy\\forms\\frmstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2B3C4D5-E6F7-8901-BCDE-F12345678902}|SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj|e:\\uai\\3ro\\diploma 2025\\diploma_strategy\\sportsbookpatterns.be\\cuentausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2B3C4D5-E6F7-8901-BCDE-F12345678902}|SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj|solutionrelative:sportsbookpatterns.be\\cuentausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 642,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +35,44 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmStrategy.cs",
+              "DocumentMoniker": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\DIPLOMA_STRATEGY\\Forms\\FrmStrategy.cs",
+              "RelativeDocumentMoniker": "DIPLOMA_STRATEGY\\Forms\\FrmStrategy.cs",
+              "ToolTip": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\DIPLOMA_STRATEGY\\Forms\\FrmStrategy.cs",
+              "RelativeToolTip": "DIPLOMA_STRATEGY\\Forms\\FrmStrategy.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA3wCUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T19:23:48.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmStrategy.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\DIPLOMA_STRATEGY\\Forms\\FrmStrategy.cs",
+              "RelativeDocumentMoniker": "DIPLOMA_STRATEGY\\Forms\\FrmStrategy.cs",
+              "ToolTip": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\DIPLOMA_STRATEGY\\Forms\\FrmStrategy.cs [Dise\u00F1o]",
+              "RelativeToolTip": "DIPLOMA_STRATEGY\\Forms\\FrmStrategy.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T19:23:43.613Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CuentaUsuario.cs",
+              "DocumentMoniker": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.BE\\CuentaUsuario.cs",
+              "RelativeDocumentMoniker": "SportsbookPatterns.BE\\CuentaUsuario.cs",
+              "ToolTip": "E:\\UAI\\3RO\\DIPLOMA 2025\\DIPLOMA_STRATEGY\\SportsbookPatterns.BE\\CuentaUsuario.cs",
+              "RelativeToolTip": "SportsbookPatterns.BE\\CuentaUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T18:42:44.71Z",
+              "EditorCaption": ""
             }
           ]
         }

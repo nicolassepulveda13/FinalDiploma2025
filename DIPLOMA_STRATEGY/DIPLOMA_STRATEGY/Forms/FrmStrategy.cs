@@ -26,22 +26,57 @@ namespace DIPLOMA_STRATEGY.Forms
         private void CargarUsuarios()
         {
             var usuarios = _usuarioService.GetAll();
-            cmbUsuarios.DataSource = usuarios;
+            cmbUsuarios.DataSource = null;
+            cmbUsuarios.Items.Clear();
             cmbUsuarios.DisplayMember = "Nombre";
             cmbUsuarios.ValueMember = "UsuarioId";
+            cmbUsuarios.DataSource = usuarios;
+            cmbUsuarios.SelectedIndex = -1;
         }
 
         private void cmbUsuarios_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbUsuarios.SelectedValue != null)
+            if (cmbUsuarios.SelectedIndex == -1)
+                return;
+
+            int usuarioId = 0;
+
+            if (cmbUsuarios.SelectedItem is Usuario usuario)
             {
-                int usuarioId = (int)cmbUsuarios.SelectedValue;
-                _cuentaActual = _cuentaService.GetCuentaByUsuarioId(usuarioId);
-                if (_cuentaActual != null)
+                usuarioId = usuario.UsuarioId;
+            }
+            else if (cmbUsuarios.SelectedValue != null)
+            {
+                if (cmbUsuarios.SelectedValue is int id)
                 {
-                    lblSaldoActual.Text = $"Saldo: ${_cuentaActual.Saldo:F2}";
-                    CargarTransacciones();
+                    usuarioId = id;
                 }
+                else if (cmbUsuarios.SelectedValue is Usuario usr)
+                {
+                    usuarioId = usr.UsuarioId;
+                }
+                else
+                {
+                    try
+                    {
+                        usuarioId = Convert.ToInt32(cmbUsuarios.SelectedValue);
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+            else
+            {
+                return;
+            }
+
+            _cuentaActual = _cuentaService.GetCuentaByUsuarioId(usuarioId);
+            if (_cuentaActual != null)
+            {
+                lblSaldoActual.Text = $"Saldo: ${_cuentaActual.Saldo:F2}";
+                CargarTransacciones();
             }
         }
 
