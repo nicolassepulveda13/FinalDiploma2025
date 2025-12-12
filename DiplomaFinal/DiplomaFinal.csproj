@@ -19,4 +19,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="E:\UAI\3RO\DIPLOMA 2025\DiplomaFinal\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="E:\UAI\3RO\DIPLOMA 2025\DiplomaFinal\.editorconfig" />
+  </ItemGroup>
+
 </Project>

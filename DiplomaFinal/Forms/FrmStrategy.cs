@@ -1,38 +1,33 @@
 using SportsbookPatterns.BE;
+using SportsbookPatterns.BLL.Services;
+using SportsbookPatterns.BLL.State;
 using SportsbookPatterns.BLL.Strategy;
-using SportsbookPatterns.DAL.Abstraccion;
 
 namespace DiplomaFinal.Forms
 {
     public partial class FrmStrategy : Form
     {
-        private readonly IUsuarioRepository _usuarioRepo;
-        private readonly ICuentaUsuarioRepository _cuentaRepo;
-        private readonly ITransaccionRepository _transaccionRepo;
-        private readonly ITipoTransaccionRepository _tipoRepo;
-        private readonly ProcesadorDeTransacciones _procesador;
+        private readonly UsuarioService _usuarioService;
+        private readonly CuentaUsuarioService _cuentaService;
+        private readonly ApuestaService _apuestaService;
         private CuentaUsuario? _cuentaActual;
         private Random _random = new Random();
 
         public FrmStrategy(
-            IUsuarioRepository usuarioRepo,
-            ICuentaUsuarioRepository cuentaRepo,
-            ITransaccionRepository transaccionRepo,
-            ITipoTransaccionRepository tipoRepo,
-            ProcesadorDeTransacciones procesador)
+            UsuarioService usuarioService,
+            CuentaUsuarioService cuentaService,
+            ApuestaService apuestaService)
         {
             InitializeComponent();
-            _usuarioRepo = usuarioRepo;
-            _cuentaRepo = cuentaRepo;
-            _transaccionRepo = transaccionRepo;
-            _tipoRepo = tipoRepo;
-            _procesador = procesador;
+            _usuarioService = usuarioService;
+            _cuentaService = cuentaService;
+            _apuestaService = apuestaService;
             CargarUsuarios();
         }
 
         private void CargarUsuarios()
         {
-            var usuarios = _usuarioRepo.GetAll();
+            var usuarios = _usuarioService.GetAll();
             cmbUsuarios.DataSource = usuarios;
             cmbUsuarios.DisplayMember = "Nombre";
             cmbUsuarios.ValueMember = "UsuarioId";
@@ -43,7 +38,7 @@ namespace DiplomaFinal.Forms
             if (cmbUsuarios.SelectedValue != null)
             {
                 int usuarioId = (int)cmbUsuarios.SelectedValue;
-                _cuentaActual = _cuentaRepo.GetByUsuarioId(usuarioId);
+                _cuentaActual = _cuentaService.GetCuentaByUsuarioId(usuarioId);
                 if (_cuentaActual != null)
                 {
                     lblSaldoActual.Text = $"Saldo: ${_cuentaActual.Saldo:F2}";
@@ -68,56 +63,34 @@ namespace DiplomaFinal.Forms
 
             int resultado = _random.Next(1, 4);
             string tipoOperacion;
-            IOperacion estrategia;
 
             if (resultado == 1)
             {
                 tipoOperacion = "Gana";
-                var tipoCredito = _tipoRepo.GetByCodigo("Credito");
-                estrategia = new OperacionCredito();
                 lblResultado.Text = "Resultado: ¡Ganaste!";
                 lblResultado.ForeColor = Color.Green;
             }
             else if (resultado == 2)
             {
                 tipoOperacion = "Pierde";
-                var tipoDebito = _tipoRepo.GetByCodigo("Debito");
-                estrategia = new OperacionDebito();
                 lblResultado.Text = "Resultado: Perdiste";
                 lblResultado.ForeColor = Color.Red;
             }
             else
             {
                 tipoOperacion = "Vuelve a intentar";
-                var tipoCancelacion = _tipoRepo.GetByCodigo("Cancelacion");
-                estrategia = new OperacionCancelacion();
                 lblResultado.Text = "Resultado: Vuelve a intentar";
                 lblResultado.ForeColor = Color.Orange;
             }
 
             try
             {
-                var tipoTransaccion = _tipoRepo.GetByCodigo(tipoOperacion == "Gana" ? "Credito" : tipoOperacion == "Pierde" ? "Debito" : "Cancelacion");
-                if (tipoTransaccion == null)
-                    throw new Exception("Tipo de transacción no encontrado.");
-
-                var transaccion = new Transaccion
-                {
-                    CuentaId = _cuentaActual.CuentaId,
-                    TipoTransaccionId = tipoTransaccion.TipoTransaccionId,
-                    Monto = monto,
-                    FechaTransaccion = DateTime.Now,
-                    Descripcion = $"Apuesta - {tipoOperacion}",
-                    Exitoso = tipoOperacion != "Vuelve a intentar"
-                };
-
-                _procesador.SetStrategy(estrategia);
-                var resultadoTransaccion = _procesador.ProcessTransaction(transaccion);
+                var resultadoTransaccion = _apuestaService.ProcesarApuesta(_cuentaActual, monto, tipoOperacion);
 
                 MessageBox.Show(resultadoTransaccion.Mensaje, tipoOperacion, MessageBoxButtons.OK, 
                     resultadoTransaccion.Exitoso ? MessageBoxIcon.Information : MessageBoxIcon.Warning);
 
-                _cuentaActual = _cuentaRepo.GetById(_cuentaActual.CuentaId);
+                _cuentaActual = _cuentaService.GetCuentaByUsuarioId(_cuentaActual.UsuarioId);
                 if (_cuentaActual != null)
                 {
                     lblSaldoActual.Text = $"Saldo: ${_cuentaActual.Saldo:F2}";
@@ -134,7 +107,7 @@ namespace DiplomaFinal.Forms
         {
             if (_cuentaActual != null)
             {
-                var transacciones = _transaccionRepo.GetByCuentaId(_cuentaActual.CuentaId);
+                var transacciones = _cuentaService.GetTransaccionesByCuenta(_cuentaActual.CuentaId);
                 dgvTransacciones.DataSource = transacciones;
             }
         }

@@ -1,36 +1,25 @@
-using SportsbookPatterns.BE;
-using SportsbookPatterns.BE.Visitor;
-using SportsbookPatterns.BLL.Visitor;
-using SportsbookPatterns.DAL.Abstraccion;
+using SportsbookPatterns.BLL.Services;
 
 namespace DiplomaFinal.Forms
 {
     public partial class FrmVisitor : Form
     {
-        private readonly ITransaccionRepository _transaccionRepo;
-        private readonly ITransaccionApuestaRepository _apuestaRepo;
-        private readonly ITransaccionRetiroRepository _retiroRepo;
-        private readonly ITransaccionDepositoRepository _depositoRepo;
+        private readonly ReporteService _reporteService;
 
-        public FrmVisitor(
-            ITransaccionRepository transaccionRepo,
-            ITransaccionApuestaRepository apuestaRepo,
-            ITransaccionRetiroRepository retiroRepo,
-            ITransaccionDepositoRepository depositoRepo)
+        public FrmVisitor(ReporteService reporteService)
         {
             InitializeComponent();
-            _transaccionRepo = transaccionRepo;
-            _apuestaRepo = apuestaRepo;
-            _retiroRepo = retiroRepo;
-            _depositoRepo = depositoRepo;
+            _reporteService = reporteService;
         }
 
         private void btnReporteImpuestos_Click(object sender, EventArgs e)
         {
             try
             {
-                var visitor = new CalculadoraImpuestosVisitor();
-                ProcesarReporte(visitor, "Reporte de Impuestos");
+                var resultado = _reporteService.GenerarReporteImpuestos();
+                txtResultado.Text = $"Reporte de Impuestos\r\n\r\n{resultado}";
+                var datos = new List<object> { new { Tipo = "Impuestos", Resultado = resultado.ToString() } };
+                dgvResultados.DataSource = datos;
             }
             catch (Exception ex)
             {
@@ -42,8 +31,10 @@ namespace DiplomaFinal.Forms
         {
             try
             {
-                var visitor = new GeneradorComisionesVisitor();
-                ProcesarReporte(visitor, "Reporte de Comisiones");
+                var resultado = _reporteService.GenerarReporteComisiones();
+                txtResultado.Text = $"Reporte de Comisiones\r\n\r\n{resultado}";
+                var datos = new List<object> { new { Tipo = "Comisiones", Resultado = resultado.ToString() } };
+                dgvResultados.DataSource = datos;
             }
             catch (Exception ex)
             {
@@ -55,102 +46,22 @@ namespace DiplomaFinal.Forms
         {
             try
             {
-                var visitorImpuestos = new CalculadoraImpuestosVisitor();
-                var visitorComisiones = new GeneradorComisionesVisitor();
-
-                var transacciones = _transaccionRepo.GetAll();
-                var elementos = new List<ITransaccionVisitable>();
-
-                foreach (var transaccion in transacciones)
-                {
-                    var apuesta = _apuestaRepo.GetByTransaccionId(transaccion.TransaccionId);
-                    if (apuesta != null)
-                    {
-                        apuesta.Transaccion = transaccion;
-                        elementos.Add(apuesta);
-                        continue;
-                    }
-
-                    var retiro = _retiroRepo.GetByTransaccionId(transaccion.TransaccionId);
-                    if (retiro != null)
-                    {
-                        retiro.Transaccion = transaccion;
-                        elementos.Add(retiro);
-                        continue;
-                    }
-
-                    var deposito = _depositoRepo.GetByTransaccionId(transaccion.TransaccionId);
-                    if (deposito != null)
-                    {
-                        deposito.Transaccion = transaccion;
-                        elementos.Add(deposito);
-                    }
-                }
-
-                foreach (var elemento in elementos)
-                {
-                    elemento.Accept(visitorImpuestos);
-                    elemento.Accept(visitorComisiones);
-                }
-
-                var resultadoImpuestos = visitorImpuestos.GetResultado();
-                var resultadoComisiones = visitorComisiones.GetResultado();
+                var (resultadoImpuestos, resultadoComisiones) = _reporteService.GenerarReporteGeneral();
 
                 txtResultado.Text = $"=== REPORTE GENERAL ===\r\n\r\n";
                 txtResultado.Text += $"IMPUESTOS:\r\n{resultadoImpuestos}\r\n\r\n";
                 txtResultado.Text += $"COMISIONES:\r\n{resultadoComisiones}";
 
-                var datos = new List<object> { new { Tipo = "Impuestos", Resultado = resultadoImpuestos.ToString() }, 
-                    new { Tipo = "Comisiones", Resultado = resultadoComisiones.ToString() } };
+                var datos = new List<object> { 
+                    new { Tipo = "Impuestos", Resultado = resultadoImpuestos.ToString() }, 
+                    new { Tipo = "Comisiones", Resultado = resultadoComisiones.ToString() } 
+                };
                 dgvResultados.DataSource = datos;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void ProcesarReporte(ITransaccionVisitor visitor, string titulo)
-        {
-            var transacciones = _transaccionRepo.GetAll();
-            var elementos = new List<ITransaccionVisitable>();
-
-            foreach (var transaccion in transacciones)
-            {
-                var apuesta = _apuestaRepo.GetByTransaccionId(transaccion.TransaccionId);
-                if (apuesta != null)
-                {
-                    apuesta.Transaccion = transaccion;
-                    elementos.Add(apuesta);
-                    continue;
-                }
-
-                var retiro = _retiroRepo.GetByTransaccionId(transaccion.TransaccionId);
-                if (retiro != null)
-                {
-                    retiro.Transaccion = transaccion;
-                    elementos.Add(retiro);
-                    continue;
-                }
-
-                var deposito = _depositoRepo.GetByTransaccionId(transaccion.TransaccionId);
-                if (deposito != null)
-                {
-                    deposito.Transaccion = transaccion;
-                    elementos.Add(deposito);
-                }
-            }
-
-            foreach (var elemento in elementos)
-            {
-                elemento.Accept(visitor);
-            }
-
-            var resultado = visitor.GetResultado();
-            txtResultado.Text = $"{titulo}\r\n\r\n{resultado}";
-
-            var datos = new List<object> { new { Tipo = titulo, Resultado = resultado.ToString() } };
-            dgvResultados.DataSource = datos;
         }
     }
 }

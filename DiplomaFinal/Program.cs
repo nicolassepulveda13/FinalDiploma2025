@@ -1,4 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
+using SportsbookPatterns.BLL.Services;
 using SportsbookPatterns.BLL.State;
 using SportsbookPatterns.BLL.Strategy;
 using SportsbookPatterns.BLL.Visitor;
@@ -30,6 +31,10 @@ namespace DiplomaFinal
             services.AddSingleton<ITipoTransaccionRepository>(sp => new TipoTransaccionRepository(sp.GetRequiredService<Acceso>()));
             services.AddSingleton<ILogTransaccionRepository>(sp => new LogTransaccionRepository(sp.GetRequiredService<Acceso>()));
 
+            services.AddTransient<UsuarioService>();
+            services.AddTransient<TransaccionService>();
+            services.AddTransient<ReporteService>();
+            services.AddTransient<ApuestaService>();
             services.AddTransient<CuentaUsuarioService>();
             services.AddTransient<ProcesadorDeTransacciones>();
 

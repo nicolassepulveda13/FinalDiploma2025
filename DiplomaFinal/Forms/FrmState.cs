@@ -1,31 +1,22 @@
 using SportsbookPatterns.BE;
+using SportsbookPatterns.BLL.Services;
 using SportsbookPatterns.BLL.State;
-using SportsbookPatterns.DAL.Abstraccion;
 
 namespace DiplomaFinal.Forms
 {
     public partial class FrmState : Form
     {
-        private readonly IUsuarioRepository _usuarioRepo;
-        private readonly ICuentaUsuarioRepository _cuentaRepo;
-        private readonly IEstadoCuentaRepository _estadoRepo;
-        private readonly ITransaccionRepository _transaccionRepo;
+        private readonly UsuarioService _usuarioService;
         private readonly CuentaUsuarioService _cuentaService;
         private CuentaUsuario? _cuentaActual;
         private IEstadoCuenta? _estadoActual;
 
         public FrmState(
-            IUsuarioRepository usuarioRepo,
-            ICuentaUsuarioRepository cuentaRepo,
-            IEstadoCuentaRepository estadoRepo,
-            ITransaccionRepository transaccionRepo,
+            UsuarioService usuarioService,
             CuentaUsuarioService cuentaService)
         {
             InitializeComponent();
-            _usuarioRepo = usuarioRepo;
-            _cuentaRepo = cuentaRepo;
-            _estadoRepo = estadoRepo;
-            _transaccionRepo = transaccionRepo;
+            _usuarioService = usuarioService;
             _cuentaService = cuentaService;
             CargarUsuarios();
             CargarEstados();
@@ -33,7 +24,7 @@ namespace DiplomaFinal.Forms
 
         private void CargarUsuarios()
         {
-            var usuarios = _usuarioRepo.GetAll();
+            var usuarios = _usuarioService.GetAll();
             cmbUsuarios.DataSource = usuarios;
             cmbUsuarios.DisplayMember = "Nombre";
             cmbUsuarios.ValueMember = "UsuarioId";
@@ -41,7 +32,7 @@ namespace DiplomaFinal.Forms
 
         private void CargarEstados()
         {
-            var estados = _estadoRepo.GetAll();
+            var estados = _cuentaService.GetAllEstados();
             cmbEstados.DataSource = estados;
             cmbEstados.DisplayMember = "CodigoEstado";
             cmbEstados.ValueMember = "EstadoCuentaId";
@@ -52,7 +43,7 @@ namespace DiplomaFinal.Forms
             if (cmbUsuarios.SelectedValue != null)
             {
                 int usuarioId = (int)cmbUsuarios.SelectedValue;
-                _cuentaActual = _cuentaRepo.GetByUsuarioId(usuarioId);
+                _cuentaActual = _cuentaService.GetCuentaByUsuarioId(usuarioId);
                 if (_cuentaActual != null)
                 {
                     ActualizarVista();
@@ -64,7 +55,7 @@ namespace DiplomaFinal.Forms
         {
             if (_cuentaActual != null && cmbEstados.SelectedValue != null)
             {
-                var estado = _estadoRepo.GetById((int)cmbEstados.SelectedValue);
+                var estado = _cuentaService.GetAllEstados().FirstOrDefault(e => e.EstadoCuentaId == (int)cmbEstados.SelectedValue);
                 if (estado != null)
                 {
                     _cuentaService.CambiarEstado(_cuentaActual, estado.CodigoEstado);
@@ -106,8 +97,9 @@ namespace DiplomaFinal.Forms
 
             try
             {
-                _estadoActual.Apostar(_cuentaActual, monto, _cuentaRepo, _transaccionRepo);
+                _cuentaService.Apostar(_cuentaActual, monto);
                 MessageBox.Show("Apuesta realizada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                _cuentaActual = _cuentaService.GetCuentaByUsuarioId(_cuentaActual.UsuarioId);
                 ActualizarVista();
                 CargarHistorial();
             }
@@ -133,8 +125,9 @@ namespace DiplomaFinal.Forms
 
             try
             {
-                _estadoActual.Retirar(_cuentaActual, monto, _cuentaRepo, _transaccionRepo);
+                _cuentaService.Retirar(_cuentaActual, monto);
                 MessageBox.Show("Retiro realizado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                _cuentaActual = _cuentaService.GetCuentaByUsuarioId(_cuentaActual.UsuarioId);
                 ActualizarVista();
                 CargarHistorial();
             }
@@ -160,8 +153,9 @@ namespace DiplomaFinal.Forms
 
             try
             {
-                _estadoActual.Depositar(_cuentaActual, monto, _cuentaRepo, _transaccionRepo);
+                _cuentaService.Depositar(_cuentaActual, monto);
                 MessageBox.Show("Depósito realizado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                _cuentaActual = _cuentaService.GetCuentaByUsuarioId(_cuentaActual.UsuarioId);
                 ActualizarVista();
                 CargarHistorial();
             }
@@ -175,7 +169,7 @@ namespace DiplomaFinal.Forms
         {
             if (_cuentaActual != null)
             {
-                var transacciones = _transaccionRepo.GetByCuentaId(_cuentaActual.CuentaId);
+                var transacciones = _cuentaService.GetTransaccionesByCuenta(_cuentaActual.CuentaId);
                 dgvHistorial.DataSource = transacciones;
             }
         }
