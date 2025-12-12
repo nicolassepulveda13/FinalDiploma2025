@@ -1,8 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="SportsbookPatterns.BE\SportsbookPatterns.BE.csproj" />
-    <ProjectReference Include="SportsbookPatterns.BLL\SportsbookPatterns.BLL.csproj" />
+    <ProjectReference Include="..\SportsbookPatterns.BE\SportsbookPatterns.BE.csproj" />
+    <ProjectReference Include="..\SportsbookPatterns.BLL\SportsbookPatterns.BLL.csproj" />
+    <ProjectReference Include="..\SportsbookPatterns.DAL.Implementacion\SportsbookPatterns.DAL.Implementacion.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,0 +1,124 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "SportsbookPatterns.BE/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/SportsbookPatterns.BE.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SportsbookPatterns.BE.dll": {}
+        }
+      },
+      "SportsbookPatterns.DAL.Abstraccion/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "SportsbookPatterns.BE": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SportsbookPatterns.DAL.Abstraccion.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SportsbookPatterns.DAL.Abstraccion.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SportsbookPatterns.BE/1.0.0": {
+      "type": "project",
+      "path": "../SportsbookPatterns.BE/SportsbookPatterns.BE.csproj",
+      "msbuildProject": "../SportsbookPatterns.BE/SportsbookPatterns.BE.csproj"
+    },
+    "SportsbookPatterns.DAL.Abstraccion/1.0.0": {
+      "type": "project",
+      "path": "../SportsbookPatterns.DAL.Abstraccion/SportsbookPatterns.DAL.Abstraccion.csproj",
+      "msbuildProject": "../SportsbookPatterns.DAL.Abstraccion/SportsbookPatterns.DAL.Abstraccion.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "SportsbookPatterns.BE >= 1.0.0",
+      "SportsbookPatterns.DAL.Abstraccion >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\nico_\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.BLL\\SportsbookPatterns.BLL.csproj",
+      "projectName": "SportsbookPatterns.BLL",
+      "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.BLL\\SportsbookPatterns.BLL.csproj",
+      "packagesPath": "C:\\Users\\nico_\\.nuget\\packages\\",
+      "outputPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.BLL\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\nico_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj": {
+              "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.BE\\SportsbookPatterns.BE.csproj"
+            },
+            "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.DAL.Abstraccion\\SportsbookPatterns.DAL.Abstraccion.csproj": {
+              "projectPath": "E:\\UAI\\3RO\\DIPLOMA 2025\\SportsbookPatterns.DAL.Abstraccion\\SportsbookPatterns.DAL.Abstraccion.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
