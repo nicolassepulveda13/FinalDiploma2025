@@ -14,3 +14,5 @@ E:\UAI\3RO\DIPLOMA 2025\DiplomaFinal\obj\Debug\net8.0-windows\refint\DiplomaFina
 E:\UAI\3RO\DIPLOMA 2025\DiplomaFinal\obj\Debug\net8.0-windows\DiplomaFinal.pdb
 E:\UAI\3RO\DIPLOMA 2025\DiplomaFinal\obj\Debug\net8.0-windows\DiplomaFinal.genruntimeconfig.cache
 E:\UAI\3RO\DIPLOMA 2025\DiplomaFinal\obj\Debug\net8.0-windows\ref\DiplomaFinal.dll
+E:\UAI\3RO\DIPLOMA 2025\DiplomaFinal\obj\Debug\net8.0-windows\DiplomaFinal.csproj.AssemblyReference.cache
+E:\UAI\3RO\DIPLOMA 2025\DiplomaFinal\obj\Debug\net8.0-windows\DiplomaFinal.sourcelink.json

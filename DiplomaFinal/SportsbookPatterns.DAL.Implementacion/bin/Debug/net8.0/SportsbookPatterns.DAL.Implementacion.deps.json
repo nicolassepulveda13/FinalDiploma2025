@@ -1,0 +1,53 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SportsbookPatterns.DAL.Implementacion/1.0.0": {
+        "dependencies": {
+          "SportsbookPatterns.BE": "1.0.0",
+          "SportsbookPatterns.DAL.Abstraccion": "1.0.0"
+        },
+        "runtime": {
+          "SportsbookPatterns.DAL.Implementacion.dll": {}
+        }
+      },
+      "SportsbookPatterns.BE/1.0.0": {
+        "runtime": {
+          "SportsbookPatterns.BE.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SportsbookPatterns.DAL.Abstraccion/1.0.0": {
+        "runtime": {
+          "SportsbookPatterns.DAL.Abstraccion.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SportsbookPatterns.DAL.Implementacion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SportsbookPatterns.BE/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SportsbookPatterns.DAL.Abstraccion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

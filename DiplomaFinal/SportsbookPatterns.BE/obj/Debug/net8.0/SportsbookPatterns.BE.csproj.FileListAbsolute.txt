@@ -1,0 +1,12 @@
+E:\UAI\3RO\DIPLOMA 2025\DiplomaFinal\SportsbookPatterns.BE\bin\Debug\net8.0\SportsbookPatterns.BE.deps.json
+E:\UAI\3RO\DIPLOMA 2025\DiplomaFinal\SportsbookPatterns.BE\bin\Debug\net8.0\SportsbookPatterns.BE.dll
+E:\UAI\3RO\DIPLOMA 2025\DiplomaFinal\SportsbookPatterns.BE\bin\Debug\net8.0\SportsbookPatterns.BE.pdb
+E:\UAI\3RO\DIPLOMA 2025\DiplomaFinal\SportsbookPatterns.BE\obj\Debug\net8.0\SportsbookPatterns.BE.GeneratedMSBuildEditorConfig.editorconfig
+E:\UAI\3RO\DIPLOMA 2025\DiplomaFinal\SportsbookPatterns.BE\obj\Debug\net8.0\SportsbookPatterns.BE.AssemblyInfoInputs.cache
+E:\UAI\3RO\DIPLOMA 2025\DiplomaFinal\SportsbookPatterns.BE\obj\Debug\net8.0\SportsbookPatterns.BE.AssemblyInfo.cs
+E:\UAI\3RO\DIPLOMA 2025\DiplomaFinal\SportsbookPatterns.BE\obj\Debug\net8.0\SportsbookPatterns.BE.csproj.CoreCompileInputs.cache
+E:\UAI\3RO\DIPLOMA 2025\DiplomaFinal\SportsbookPatterns.BE\obj\Debug\net8.0\SportsbookPatterns.BE.sourcelink.json
+E:\UAI\3RO\DIPLOMA 2025\DiplomaFinal\SportsbookPatterns.BE\obj\Debug\net8.0\SportsbookPatterns.BE.dll
+E:\UAI\3RO\DIPLOMA 2025\DiplomaFinal\SportsbookPatterns.BE\obj\Debug\net8.0\refint\SportsbookPatterns.BE.dll
+E:\UAI\3RO\DIPLOMA 2025\DiplomaFinal\SportsbookPatterns.BE\obj\Debug\net8.0\SportsbookPatterns.BE.pdb
+E:\UAI\3RO\DIPLOMA 2025\DiplomaFinal\SportsbookPatterns.BE\obj\Debug\net8.0\ref\SportsbookPatterns.BE.dll
