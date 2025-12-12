@@ -24,6 +24,9 @@
         }
       },
       "SportsbookPatterns.DAL.Abstraccion/1.0.0": {
+        "dependencies": {
+          "SportsbookPatterns.BE": "1.0.0"
+        },
         "runtime": {
           "SportsbookPatterns.DAL.Abstraccion.dll": {
             "assemblyVersion": "1.0.0.0",

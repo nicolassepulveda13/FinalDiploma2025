@@ -127,5 +127,14 @@ namespace SportsbookPatterns.DAL.Implementacion
             parametro.ParameterName = nombre;
             return parametro;
         }
+
+        public SqlParameter CrearParametroNull(string nombre, DbType tipo)
+        {
+            SqlParameter parametro = new SqlParameter();
+            parametro.DbType = tipo;
+            parametro.Value = DBNull.Value;
+            parametro.ParameterName = nombre;
+            return parametro;
+        }
     }
 }

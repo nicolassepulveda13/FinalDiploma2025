@@ -23,7 +23,7 @@ namespace SportsbookPatterns.DAL.Implementacion
             if (log.TransaccionId.HasValue)
                 param.Add(acceso.CrearParametro("@TransaccionId", log.TransaccionId.Value));
             else
-                param.Add(acceso.CrearParametro("@TransaccionId", DBNull.Value));
+                param.Add(acceso.CrearParametroNull("@TransaccionId", DbType.Int32));
             param.Add(acceso.CrearParametro("@TipoOperacion", log.TipoOperacion));
             param.Add(acceso.CrearParametro("@Mensaje", log.Mensaje));
             param.Add(acceso.CrearParametro("@Exitoso", log.Exitoso));
